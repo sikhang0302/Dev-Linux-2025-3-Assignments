@@ -46,14 +46,14 @@ The application uses a client-server model where each instance:
 ## Makefile Key Notes
 - **Directory Structure**: Clearly defines where source, include, and binary files are located.
 - **Compiler Flags**:
-- `-Wall -Wextra`: enables comprehensive warnings
-- `-I$(INC_DIR)`: adds include directory to header search path
-- `-pthread`: enables POSIX threads support
+  - `-Wall -Wextra`: enables comprehensive warnings
+  - `-I$(INC_DIR)`: adds include directory to header search path
+  - `-pthread`: enables POSIX threads support
 - **Targets**:
-- `all`: Default build target
-- `install`: Copies the executable to the root directory
-- `quick`: Combination of build and install
-- `clean`: Removes all build artifacts
+  - `all`: Default build target
+  - `install`: Copies the executable to the root directory
+  - `quick`: Combination of build and install
+  - `clean`: Removes all build artifacts
 - **Automatic Source Detection**: Uses `wildcard` to automatically find all `.c` files in the source directory.
 
 ## Installation
